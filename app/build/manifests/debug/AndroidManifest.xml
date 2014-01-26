@@ -1,0 +1,20 @@
+<!-- From: file:/home/zzz711/AndroidStudioProjects/HangMan2/app/src/main/AndroidManifest.xml --><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.hangman">
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.example.hangman.WordEntryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:label="Hangman" android:name="com.example.hangman.HangmanActivity" android:screenOrientation="portrait">
+            
+        </activity>
+        
+    </application>
+
+</manifest>
