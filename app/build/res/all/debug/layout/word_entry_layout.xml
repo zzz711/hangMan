@@ -26,6 +26,26 @@
         android:layout_below="@id/enteredWordEditText"
         android:onClick="setWord"
         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userText"
+        android:layout_below="@+id/setWordButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/setWordButton"
+        android:hint="Username"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Username"
+        android:id="@+id/userNameButton"
+        android:layout_below="@+id/userText"
+        android:layout_alignRight="@+id/userText"
+        android:onClick="setName"
+        />
     
 </RelativeLayout>
 <!-- From: file:/home/zzz711/AndroidStudioProjects/HangMan2/app/src/main/res/layout/word_entry_layout.xml -->

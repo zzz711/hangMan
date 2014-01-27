@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+import java.io.*;
 
 /**
  * <h2>Overview</h2>
@@ -72,7 +73,6 @@ public class WordEntryActivity extends Activity {
         Intent intent = new Intent(this, HangmanActivity.class);
         EditText wordEditText = (EditText) findViewById(R.id.enteredWordEditText);
 
-        // Check the number of characters in the word
         word = wordEditText.getText().toString();
         word.toLowerCase();
 
@@ -109,14 +109,18 @@ public class WordEntryActivity extends Activity {
         Intent intent = new Intent(this, HangmanActivity.class);
         EditText userNameEditText = (EditText) findViewById(R.id.userNameButton);
 
+        //creates a new bundle to store the username and phrase entered
         Bundle b = new Bundle();
 
+        //gets the username from the editText
         String name = userNameEditText.getText().toString();
-        name.toLowerCase();
+        name.toLowerCase(); //converts all letters to lower case
 
-        b.putString(word, null);
-        b.putString(name, null);
 
+        b.putString("Word", word); //inserts the phrase entered by the user into the bundle with the key Word
+        b.putString("userName", name); ////inserts the username entered by the user into the bundle with the key userName
+
+        //checks to see if the username is empty
         if (name.length() == 0)
         {
             Toast.makeText(userNameEditText.getContext(), "Enter a username!", Toast.LENGTH_SHORT).show();

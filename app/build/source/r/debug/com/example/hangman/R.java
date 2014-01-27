@@ -18,7 +18,7 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f080007;
+        public static final int action_settings=0x7f080009;
         public static final int enteredWordEditText=0x7f080005;
         public static final int guessButton=0x7f080003;
         public static final int guessEditText=0x7f080002;
@@ -26,6 +26,8 @@ public final class R {
         public static final int outputTextView=0x7f080001;
         public static final int replayButton=0x7f080004;
         public static final int setWordButton=0x7f080006;
+        public static final int userNameButton=0x7f080008;
+        public static final int userText=0x7f080007;
     }
     public static final class layout {
         public static final int hangman_activity_layout=0x7f030000;
